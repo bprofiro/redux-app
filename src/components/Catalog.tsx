@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import api from '../services/api';
 import { addProductToCart } from '../store/modules/cart/actions';
 import { IProduct } from '../store/modules/cart/type';
@@ -30,7 +30,9 @@ const Catalog: React.FC = () => {
           <button
             type="button"
             onClick={() => handleAddProductToCart(product)}
-          >Comprar</button>
+          >
+            Comprar
+          </button>
         </article>
       ))}
     </main>
