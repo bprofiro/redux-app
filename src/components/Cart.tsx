@@ -3,8 +3,6 @@ import { useSelector } from 'react-redux';
 import { IState } from '../store';
 import { ICardItem } from '../store/modules/cart/type';
 
-// import { Container } from './styles';
-
 const Cart: React.FC = () => {
   const cart = useSelector<IState, ICardItem[]>(state => state.cart.items);
 
